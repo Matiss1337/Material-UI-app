@@ -1,17 +1,25 @@
-import { Container } from '@mui/material'
-import Typography from '@mui/material/Typography'
 import React from 'react'
-import './App.css'
+import Feed from './components/Feed'
+import Sidebar from './components/Sidebar'
+import Rightbar from './components/Rightbar'
+import Box from '@mui/material/Box';
+import { Container, Stack } from '@mui/material';
+import Navbar from './components/Navbar';
 
 function App() {
 
   return (
-    <div className="App">
-      <Container sx={{bgcolor: "tomato", height: "100vh"}}>
-<Typography variant='h1' sx={{p:1}}>hello</Typography>
-    </Container>
-    </div>
+    <Box>
+<Navbar/>
+<Stack direction="row" spacing={2} justifyContent="space-between">
+<Sidebar/>
+<Feed/>
+<Rightbar/>
+</Stack>
+    </Box>
   )
 }
 
 export default App
+
+
