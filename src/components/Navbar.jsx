@@ -2,10 +2,8 @@ import React, { useState } from 'react'
 import Box from '@mui/material/Box';
 import { AppBar, Toolbar, Typography, styled, InputBase, Avatar, } from '@mui/material';
 import VideoSettingsIcon from '@mui/icons-material/VideoSettings';
-import { display } from '@mui/system';
 import Badge from '@mui/material/Badge';
 import MailIcon from '@mui/icons-material/Mail';
-import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
