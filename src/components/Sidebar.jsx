@@ -14,12 +14,15 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import SentimentVerySatisfiedOutlinedIcon from '@mui/icons-material/SentimentVerySatisfiedOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import AccountBoxOutlinedIcon from '@mui/icons-material/AccountBoxOutlined';
+import NightsStayIcon from '@mui/icons-material/NightsStay';
+import Switch from '@mui/material/Switch';
 
 function Sidebar() {
 
   return (
     <Box flex={1} p={2} sx={{display: {xs: "none", sm: "block"}}}>
- <List>
+      <Box position="fixed">
+        <List>
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -82,8 +85,18 @@ function Sidebar() {
               <ListItemText primary="Profile" />
             </ListItemButton>
           </ListItem>
+
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <NightsStayIcon />
+              </ListItemIcon>
+              <Switch/>
+            </ListItemButton>
+          </ListItem>
         
         </List>
+        </Box>
     </Box>
   )
 }
