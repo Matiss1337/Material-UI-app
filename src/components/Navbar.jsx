@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Box from '@mui/material/Box';
+import {Box} from "@mui/material";
 import { AppBar, Toolbar, Typography, styled, InputBase, Avatar, } from '@mui/material';
 import VideoSettingsIcon from '@mui/icons-material/VideoSettings';
 import Badge from '@mui/material/Badge';
