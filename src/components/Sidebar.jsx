@@ -15,7 +15,7 @@ import AccountBoxOutlinedIcon from '@mui/icons-material/AccountBoxOutlined';
 import NightsStayIcon from '@mui/icons-material/NightsStay';
 import Switch from '@mui/material/Switch';
 
-function Sidebar() {
+function Sidebar({mode, setMode}) {
 
   return (
     <Box flex={1} p={2} sx={{display: {xs: "none", sm: "block"}}}>
@@ -89,7 +89,7 @@ function Sidebar() {
               <ListItemIcon>
                 <NightsStayIcon />
               </ListItemIcon>
-              <Switch/>
+              <Switch onChange={e=> setMode(mode === "light" ? "dark" : "light")}/>
             </ListItemButton>
           </ListItem>
         
